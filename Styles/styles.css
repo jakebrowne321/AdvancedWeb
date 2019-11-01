@@ -1,0 +1,824 @@
+/* Set body font family to better fit the theme */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Media Queries */
+
+
+/* Small devices */
+
+@media only screen and (max-width: 400px) {
+    /* Reduce the width of the search field to better fit the device */
+    .search-field {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* Small devices */
+
+@media only screen and (max-width: 496px) {
+    /* Automatically change font size based on screen width */
+    html {
+        font-size: calc(1em + 1vw);
+    }
+    .navbar {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    /* Change the background color of the navbar */
+    .bg-nav {
+        display: block;
+        background-color: #184578;
+    }
+}
+
+
+/* Extra large devices */
+
+@media (max-width: 1200px) {
+    /* Expand the width of image */
+    .container {
+        max-width: 1000px;
+    }
+}
+
+
+/* Logo sizing */
+
+.max-logo {
+    max-width: 170px;
+}
+
+
+/* Set column to flex */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Flex utility class */
+
+.flexer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexer li {
+    margin-top: 15px;
+}
+
+.width-auto {
+    width: auto;
+}
+
+
+/* Remove decoration on hover */
+
+.dropdown-menu .dropdown-item:hover {
+    text-decoration: none;
+}
+
+.cont .title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Have the dropdown menu 62px from the top of its parent */
+
+.dropdown-menu {
+    top: 62px;
+    border-radius: 0px;
+    background-color: #184578;
+}
+
+.dropdown-menu a {
+    font-size: 20px;
+    color: white;
+}
+
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Styling for image hover effect */
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+/* Make opacity 100 percent */
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+
+/* Transition for hover image effect */
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+
+/* Fade in effects for the image hover */
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+.fadeIn-right {
+    left: 80%;
+}
+
+.image-grid {
+    width: auto;
+    /* to keep proportions */
+    height: auto;
+    /* to keep proportions */
+    max-width: 100%;
+    /* not to stand out from div */
+    max-height: 100%;
+    /* not to stand out from div */
+    margin: auto;
+}
+
+.height-auto {
+    height: auto;
+}
+
+.half-height {
+    min-height: 50%;
+}
+
+
+/* Set anchor tag to have unerline decoration on hover */
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Change navbar fontsize and font family to better fit the device */
+
+#navbar {
+    background-color: #184578;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-inline button {
+    color: black;
+    background-color: white;
+}
+
+
+/* Navbar image will have a border */
+
+#navbar a img {
+    margin-left: 10px;
+    width: 100px;
+    padding-right: 20px;
+    border-right: #f9f9f9 solid 1px;
+}
+
+.fa-user {
+    font-size: 27px;
+    color: white;
+}
+
+.search-nav {
+    border-radius: 0px;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.quick-links h3 {
+    margin-top: 2rem;
+}
+
+.quick-links a {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.image-search {
+    position: relative;
+    background-size: cover;
+}
+
+.enroll-btn {
+    width: 75%;
+    margin: auto
+}
+
+.to-back {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-max {
+    max-height: 66px;
+}
+
+.card {
+    top: -400px;
+    left: 0;
+}
+
+.login-btn {
+    display: block;
+    width: 75%;
+    margin: auto
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.login:hover {
+    color: red;
+}
+
+.img-medium {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.solid-footer {
+    height: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Give icons in footer a margin of auto */
+
+.solid-footer i {
+    margin: auto 0;
+}
+
+.square-btn {
+    border-radius: 0px;
+}
+
+
+/* Search bar above image on landing page */
+
+.form-above-image {
+    position: absolute;
+    width: 400px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.border-none {
+    border: none;
+}
+
+ul>li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.logo-footer-lg {
+    height: 130px;
+}
+
+
+/* Google map embedded styling */
+
+iframe {
+    border: 0;
+}
+
+
+/* Navbar styling */
+
+.nav {
+    border: 1px black solid;
+    width: 100%;
+    border-radius: 20px;
+    top: 0px;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+/* Nav link styling */
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-center {
+    margin-top: auto;
+}
+
+.quick-links-md ul li {
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.logo {
+    object-fit: cover;
+    width: 50%;
+}
+
+
+/* Change font for each heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.logo-sml {
+    object-fit: cover;
+    width: 20%;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.image-sml {
+    max-height: 60px;
+    height: auto;
+}
+
+.logo-md {
+    object-fit: cover;
+    width: 20%;
+}
+
+.footer a {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.summer-prog-cards {
+    background: rgb(233, 231, 227);
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.displayNone {
+    display: none;
+}
+
+.dropdown-small {
+    margin-top: auto;
+    margin: auto;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Utilities */
+
+.minHeight {
+    min-height: 300px;
+}
+
+.calendar-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.btn-primary {
+    background-color: #184578;
+    border-color: #184578;
+}
+
+.input-group {
+    border-color: #184578;
+}
+
+.calendar-text h3 {
+    padding: 15px;
+    background-color: wheat;
+}
+
+.background-img {
+    background-image: url("/Images/splash.jpg");
+}
+
+.calendar-text a {
+    padding: 9px;
+    background-color: wheat;
+    color: black;
+}
+
+.absolute {
+    position: relative;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.about-div {
+    z-index: 1000;
+    background: #f3f3f3a4;
+    padding: 20px;
+    opacity: 1;
+}
+
+.heading-abv-img {
+    top: 0px;
+}
+
+.old-logo {
+    max-height: 200px;
+}
+
+.to-back {
+    z-index: -100;
+}
+
+.background-white {
+    background: white;
+}
+
+.to-front {
+    z-index: 1000;
+}
+
+.primary-col {
+    background-color: rgba(255, 255, 255, 0.849);
+    position: relative;
+    opacity: 1;
+}
+
+.secondary-background {
+    background: #f3f3f3a4;
+}
+
+.secondary-col {
+    background-color: rgba(156, 156, 156, 0.849);
+}
+
+.third-col {
+    background-color: rgba(233, 236, 252, 0.849);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.max-h-img {
+    z-index: -1000;
+}
+
+.image-div {
+    width: 100%;
+    text-align: center;
+}
+
+.other-image {
+    border: black 1px solid;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-image: url("../Images/large1.jpg");
+    min-height: 500px;
+}
+
+.max-h-500 {
+    max-height: 65vh;
+}
+
+.z-front {
+    z-index: 1000;
+}
+
+.medium-search-form {
+    min-width: 100px;
+}
+
+.strong-col {
+    background-color: #ee6352;
+}
+
+.dark-col {
+    background-color: #4a4a4a;
+}
+
+.light-col {
+    background-color: #f9f9f9;
+}
+
+.border-btm {
+    border-bottom: red solid 4px;
+    padding-bottom: 10px;
+}
+
+
+/* Animated burger menu styling */
+
+
+/* Used a tutorial to get this working */
+
+
+/* Icon 1 */
+
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 150%;
+    border-radius: 9px;
+    opacity: 1;
+    margin-bottom: 5px;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+    background: #e65100;
+}
+
+.animated-icon2 span {
+    background: #e3f2fd;
+}
+
+.animated-icon3 span {
+    background: #f3e5f5;
+}
+
+.animated-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+    top: 15px;
+}
+
+.animated-icon1 span:nth-child(3) {
+    top: 30px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+    top: 15px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+
+/* Icon 3*/
+
+.animated-icon2 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+    top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+    top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+
+/* Icon 4 */
+
+.animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+}
+
+.animated-icon1 span {
+    background: #00326b;
+}
